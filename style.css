@@ -1,0 +1,81 @@
+.wrapper{
+  height:100vh;
+  max-width:1200px;
+  margin:0 auto;/*so that content will be center
+  /* overflow-Y:hidden; */
+  
+ 
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* alway remember this abobve three lines */
+}
+body,html{
+background-color: rgb(250, 246, 243);
+}
+h1{
+    /* margin: 20px 100px; */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 6rem;
+    
+   
+   
+  
+}
+
+
+.container{
+ display:grid;
+ grid-template-rows: auto auto auto;
+ grid-template-columns: auto auto auto;
+ justify-content:center;
+ column-gap: 25px;
+ row-gap:35px;
+ margin-top:0px;
+ 
+
+}
+
+.image{
+  width:400px;
+  position:relative;
+  border-radius: 30px;
+   -webkit-filter: grayscale(100%); /* For Safari */
+      filter: grayscale(100%);
+      transition:transform 0.3s ease-out;
+      object-fit:cover;
+   
+      
+}
+.imageno{
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  padding:25px;
+  font-weight: 500;
+  color:white;
+  font-size:30px;
+  width:100%;
+  opacity:0;
+  
+
+
+
+}
+
+.image:hover{
+  box-shadow:5px 5px 60px rgb(108, 106, 106);
+  transition: 0.3s;
+  filter:grayscale(0%);
+  transform:scale(1.02);
+  
+
+}
+.image:hover > .imageno{
+  opacity:1;
+  transition: 0.3s;
+      
+}
